@@ -11,8 +11,8 @@ body {
   padding: 0;
 }
 
-/* Header Section */
-#header {
+/* Profile Section */
+#profile {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -21,7 +21,9 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #0077cc; /* Blue border around the profile picture */
+  border: 4px solid #0077cc; /* Blue border */
+  object-fit: cover; /* Ensure the image fits inside the circle */
+  object-position: center; /* Focus on the center of the image */
   margin-bottom: 20px;
 }
 
@@ -37,7 +39,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Links Section */
 /* Links Section */
 #links {
   display: flex;
@@ -78,4 +79,3 @@ h1 {
     width: 90%; /* Adjust width for smaller screens */
   }
 }
-
