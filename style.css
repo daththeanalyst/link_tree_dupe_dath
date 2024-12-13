@@ -168,4 +168,64 @@ h1 {
   #links a {
     width: 150%; /* Adjust width for smaller screens */
   }
+  body {
+    margin-top: -80px; /* Space above the icons */
+
+  }
+}
+/* Small monitors and laptops */
+@media (max-width: 1600px) {
+  body {
+    transform: scale(0.8);
+    transform-origin: top center;
+    height: auto;
+  }
+}
+
+/* Smaller laptops or 13-15 inch monitors */
+@media (max-width: 1366px) {
+  body {
+    transform: scale(1.1);
+    transform-origin: top center;
+  }
+}
+
+/* iPads or tablets */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(1);
+    transform-origin: top center;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  #links a {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  #social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
 }
