@@ -1,96 +1,79 @@
+/* General Layout */
 body {
   font-family: Arial, sans-serif;
+  background: #f8f9fa; /* Light gray background */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f4f4f4;
+  padding: 0;
 }
-#container {
-  text-align: center;
-}
-h1 {
-  margin-bottom: 20px;
-}
-#links a {
-  text-decoration: none;
-  background: #0077cc;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 10px 0;
-  display: inline-block;
-  transition: background 0.3s;
-}
-#links a:hover {
-  background: #005fa3;
-}
+
 /* Header Section */
 #header {
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.logo {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  border: 4px solid #0077cc; /* Blue border around the profile picture */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin: 10px 0;
 }
 
 .description {
   font-size: 16px;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-/* Links Styling */
-#links a {
-  text-decoration: none;
-  background: #0077cc;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  margin: 10px 5px;
-  display: inline-block;
-  transition: background 0.3s;
-}
-
-#links a:hover {
-  background: #005fa3;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* General Layout */
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+/* Links Section */
+#links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0 20px;
+  gap: 20px; /* Space between links */
 }
 
-h1 {
-  margin-bottom: 20px;
+#links a {
+  text-decoration: none;
+  background: white; /* White background for the cards */
+  color: #0077cc;
+  padding: 15px 20px;
+  border-radius: 15px; /* Curved corners */
+  border: 2px solid #0077cc;
+  width: 300px; /* Fixed width for consistency */
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo and text */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#links a:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#links img {
+  width: 24px; /* Logo size */
+  height: 24px;
+}
+
+/* Responsive Design */
 @media (max-width: 600px) {
   #links a {
-    width: 80%;
-    padding: 10px;
+    width: 90%; /* Adjust width for smaller screens */
   }
 }
-
