@@ -94,6 +94,7 @@ h1 {
   object-fit: contain; /* Ensure the image fits well */
 }
 
+/* Header with Full-Width Split Borders */
 #header-border {
   display: flex;
   justify-content: center;
@@ -116,9 +117,9 @@ h1 {
 #header-border::after {
   content: '';
   position: absolute;
-  height: 2px; /* Ensure the same thickness for both borders */
+  height: 2px; /* Border thickness */
   background: #0000cd; /* Blue color */
-  width: 50%; /* Each border spans half the width */
+  width: calc(50% - 10px); /* Extend each half, leaving space around the text */
 }
 
 #header-border::before {
@@ -128,7 +129,13 @@ h1 {
 
 #header-border::after {
   bottom: 0; /* Position at the bottom */
-  left: 0; /* Align the left half */
+  right: 0; /* Align the right half */
+}
+
+#header-border span {
+  z-index: 2; /* Ensure the text is above the border */
+  background: #ffffff; /* Match background color to create the gap */
+  padding: 0 10px; /* Space around the text to create the gap */
 }
 
 
