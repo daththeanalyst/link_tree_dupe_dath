@@ -6,37 +6,70 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: space-evenly; /* Distribute sections evenly */
+  height: 100vh; /* Full viewport height */
   margin: 0;
   padding: 0;
-  margin-top: 30px; /* Push everything down to fit the new header */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 /* Profile Section */
 #profile {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0; /* Remove extra margins */
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 120px; /* Adjust size for smaller screens */
+  height: 120px;
   border-radius: 50%;
-  border: 4px solid #ffffff; /* Blue border */
-  object-fit: cover; /* Focus on the center of the image */
-  object-position: center;
-  margin-bottom: 20px;
+  border: 4px solid #0000cd; /* Blue border */
+  object-fit: cover;
+  margin-bottom: 10px; /* Space below profile picture */
 }
 
-h1 {
-  font-size: 28px;
-  margin: 10px 0;
+/* Description Section */
+#description-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px; /* Reduce padding for smaller displays */
+  background: #ffffff;
+  border: 2px solid #0000cd;
+  font-size: 14px; /* Reduce font size for smaller screens */
+  line-height: 1.4;
+  text-align: center;
+  width: 80%; /* Adjust width for smaller displays */
+  margin: 0 auto 10px auto; /* Center and add spacing below */
+  border-radius: 10px;
 }
 
-.description {
-  font-size: 16px;
-  margin-bottom: 30px;
+/* Social Icons Section */
+#social-icons {
+  display: flex;
+  justify-content: center; /* Center icons */
+  align-items: center;
+  gap: 15px; /* Space between icons */
+  margin: 10px 0; /* Spacing above and below icons */
+}
+
+#social-icons a {
+  display: flex; /* Ensure icons align properly */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+  color: #0000cd; /* Blue icon color */
+  font-size: 28px; /* Icon size */
+  width: 40px; /* Adjust size for smaller screens */
+  height: 40px;
+  border: 2px solid #0000cd;
+  border-radius: 50%; /* Make circular */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#social-icons a:hover {
+  transform: scale(1.2);
+  background-color: #e6e6ff; /* Optional hover background color */
 }
 
 /* Links Section */
@@ -44,34 +77,20 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between links */
+  gap: 15px; /* Space between links */
 }
 
 #links a {
   text-decoration: none;
-  background: #ffffff; /* White background for the links */
-  color: #0000cd; /* Updated blue text color */
-  padding: 15px 20px;
-  border-radius: 15px; /* Curved corners */
-  border: 2px solid #0000cd; /* Blue border */
-  width: 300px; /* Fixed width for consistency */
+  background: #ffffff; /* White background for links */
+  color: #0000cd; /* Blue text */
+  padding: 10px 15px; /* Reduce padding for smaller screens */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #0000cd;
+  width: 80%; /* Adjust width for smaller screens */
   text-align: center;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Space between the icon and text */
-  justify-content: center;
+  font-size: 16px; /* Reduce font size for smaller displays */
   transition: transform 0.3s, box-shadow 0.3s;
-  margin-bottom: 4px; /* Add space below each link */
-}
-
-
-#links a i,
-#links a img {
-  font-size: 24px; /* Icon size */
-  color: #0000cd; /* Ensure icons match updated text color */
-  width: 24px;
-  height: 24px;
 }
 
 #links a:hover {
@@ -79,38 +98,22 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  #links a {
-    width: 90%; /* Adjust width for smaller screens */
-  }
-}
-
-/* Custom Icon Styling */
-.custom-icon {
-  width: 24px; /* Icon size */
-  height: 24px;
-  border-radius: 5px; /* Slightly rounded edges for consistency */
-  object-fit: contain; /* Ensure the image fits well */
-}
-
-/* Header with Full-Width Split Borders */
 /* Header with Full-Width Split Borders */
 #header-border {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0; /* Spacing around the section */
-  padding: 10px 0; /* Spacing inside the section */
+  margin: 10px 0; /* Reduce margin to save space */
+  padding: 10px 0; /* Adjust padding */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
-  font-size: 28px; /* Adjust font size */
+  font-size: 20px; /* Adjust font size */
   font-weight: bold; /* Bold font weight for the name */
   color: #0000cd; /* Blue font color */
   text-align: center;
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
-  width: 80%; /* Adjust width as needed */
+  width: 90%; /* Adjust width for smaller screens */
   position: relative; /* Enable pseudo-elements for the split border effect */
 }
 
@@ -120,7 +123,7 @@ h1 {
   position: absolute;
   height: 2px; /* Border thickness */
   background: #0000cd; /* Blue color */
-  width: 100%; /* Make the borders span the full width */
+  width: calc(50% - 20px); /* Properly calculate width to leave space for text */
 }
 
 #header-border::before {
@@ -130,64 +133,37 @@ h1 {
 
 #header-border::after {
   bottom: 0; /* Position at the bottom */
-  left: 0; /* Ensure it starts from the very left */
+  right: 0; /* Ensure it ends at the very right */
 }
 
 #header-border span {
   z-index: 2; /* Ensure the text is above the border */
   background: #ffffff; /* Match background color to create the gap */
-  padding: 0 20px; /* Space around the text to create the gap */
+  padding: 0 10px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
 
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 80px; /* Further reduce size for very small screens */
+    height: 80px;
+  }
 
-#description-border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 20px;
-  background: #ffffff;
-  border: 2px solid #0000cd; /* Blue border */
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the box */
-  margin-bottom: 20px; /* Reduce or remove space below description */
-}
+  #description-border {
+    font-size: 12px; /* Smaller text for very small screens */
+    padding: 8px 10px;
+  }
 
+  #social-icons a {
+    font-size: 24px; /* Adjust icon size */
+    width: 35px;
+    height: 35px;
+  }
 
-/* Social Icons Section */
-/* Social Icons Section */
-#social-icons {
-  display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  align-items: center; /* Align the icons vertically */
-  gap: 20px; /* Space between the icons */
-  margin-top: 10px; /* Space above the icons */
-  margin-bottom: 40px; /* Space below the icons */
-}
-
-#social-icons a {
-  display: flex; /* Ensure the icons align properly */
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; /* Remove underline */
-  color: #0000cd; /* Blue icon color */
-  font-size: 32px; /* Icon size */
-  width: 50px; /* Consistent icon container size */
-  height: 50px; /* Consistent icon container size */
-  border: 2px solid #0000cd; /* Add border around icons */
-  border-radius: 50%; /* Make the icon container circular */
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-#social-icons a:hover {
-  transform: scale(1.2); /* Enlarge icons slightly on hover */
-  background-color: #e6e6ff; /* Optional hover background color */
-}
-
-/* Ensure consistent spacing and alignment for icons */
-#social-icons i {
-  margin: 0; /* Remove any unwanted margin inside icons */
+  #links a {
+    font-size: 14px;
+    padding: 8px 12px;
+    width: 90%; /* Full width on smaller screens */
+  }
 }
