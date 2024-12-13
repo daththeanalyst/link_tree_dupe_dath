@@ -79,3 +79,11 @@ h1 {
     width: 90%; /* Adjust width for smaller screens */
   }
 }
+/* Custom Icon Styling */
+.custom-icon {
+  width: 24px; /* Icon size */
+  height: 24px;
+  border-radius: 5px; /* Slightly rounded edges for consistency */
+  object-fit: contain; /* Ensure the image fits well */
+}
+
