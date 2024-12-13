@@ -3,7 +3,7 @@ const links = [
   { title: "LinkedIn", url: "https://linkedin.com/in/your-profile", icon: "fab fa-linkedin" },
   { title: "Instagram", url: "https://instagram.com/your-profile", icon: "fab fa-instagram" },
   { title: "Spotify", url: "https://open.spotify.com/user/your-profile", icon: "fab fa-spotify" },
-  { title: "Portfolio", url: "https://your-personal-portfolio.com", icon: "fas fa-user-circle" },
+  { title: "Portfolio", url: "https://your-personal-portfolio.com", customIcon: "images/logo.png" },
 ];
 
 export default links;
