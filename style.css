@@ -196,54 +196,52 @@ h1 {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
 @media (max-width: 768px) {
-  #header-border {
-    font-size: 5vw; /* Smaller font size for smaller screens */
-  }
-
+  /* For smaller tablets */
   .profile-pic {
-    width: 30vw; /* Smaller profile picture */
-    height: 30vw;
+    width: 26vw;
+    height: 26vw;
   }
 
   #description-border {
-    font-size: 1rem; /* Adjust description font size */
+    font-size: 1.2rem;
   }
 
   #social-icons a {
-    font-size: 1.2rem;
-    width: 35px;
-    height: 35px;
+    font-size: 1.4rem;
+    width: 45px;
+    height: 45px;
   }
 
   #links a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 8px 12px;
   }
 }
 
 @media (max-width: 480px) {
+  /* For mobile devices */
   #header-border {
-    font-size: 6vw; /* Further reduce font size */
+    font-size: 6vw; /* Slightly larger header text */
   }
 
   .profile-pic {
-    width: 35vw; /* Smaller profile picture for phones */
+    width: 35vw;
     height: 35vw;
   }
 
   #description-border {
-    font-size: 0.9rem; /* Smaller description font */
+    font-size: 1rem; /* Smaller description for mobile */
   }
 
   #social-icons a {
-    font-size: 1rem;
-    width: 30px;
-    height: 30px;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
   }
 
   #links a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 6px 10px;
-    width: 90%; /* Increase width for smaller screens */
+    width: 90%;
   }
 }
