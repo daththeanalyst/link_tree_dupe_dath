@@ -1,9 +1,8 @@
 /* General Layout */
-/* General Layout */
 body {
   font-family: Arial, sans-serif;
   background: #ffffff; /* White background */
-  color: #0505cb; /* Text color */
+  color: #0000cd; /* Updated blue text color */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +10,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  margin-top: 30px; /* Push everything down to fit the new header */
 }
 
 /* Profile Section */
@@ -50,10 +50,10 @@ h1 {
 #links a {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
-  color: #0505cb; /* Blue text */
+  color: #0000cd; /* Updated blue text color */
   padding: 15px 20px;
   border-radius: 15px; /* Curved corners */
-  border: 2px solid #0505cb; /* Blue border */
+  border: 2px solid #0000cd; /* Updated blue border */
   width: 300px; /* Fixed width for consistency */
   text-align: center;
   font-size: 18px;
@@ -67,7 +67,7 @@ h1 {
 #links a i,
 #links a img {
   font-size: 24px; /* Icon size */
-  color: #0505cb; /* Ensure icons match text color */
+  color: #0000cd; /* Ensure icons match updated text color */
   width: 24px;
   height: 24px;
 }
@@ -92,9 +92,7 @@ h1 {
   object-fit: contain; /* Ensure the image fits well */
 }
 
-/* Header with Border */
-/* Header with Border */
-/* Header with Border */
+/* Header with Split Border */
 #header-border {
   display: flex;
   justify-content: center;
@@ -102,30 +100,50 @@ h1 {
   margin: 20px 0; /* Add spacing around the border */
   padding: 10px 0; /* Add spacing inside the border */
   background: #ffffff; /* White background */
-  border: 2px solid #0505cb; /* Blue border */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 28px; /* Adjust font size */
   font-weight: bold; /* Bold font weight for the name */
-  color: #0505cb; /* Blue font color */
+  color: #0000cd; /* Updated blue font color */
   text-align: center;
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
   width: 80%; /* Adjust width as needed */
   margin: 0 auto; /* Center the box horizontally */
+  position: relative; /* Enable pseudo-elements for the split border effect */
 }
 
+#header-border::before,
+#header-border::after {
+  content: '';
+  position: absolute;
+  height: 2px; /* Border thickness */
+  background: #0000cd; /* Updated blue color */
+  width: 50%; /* Each border spans half the width */
+  top: 0; /* Position at the top */
+}
 
+#header-border::before {
+  left: 0; /* Align the left side */
+}
+
+#header-border::after {
+  right: 0; /* Align the right side */
+}
 
 #header-border span {
-  z-index: 2; /* Ensure the text is above any background effects */
+  z-index: 2; /* Ensure the text is above the border */
+  background: #ffffff; /* Match background color to create the gap */
+  padding: 0 10px; /* Space around the text to extend the gap */
 }
+
+/* Description with Border */
 #description-border {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
   background: #ffffff;
-  border: 2px solid #0505cb;
+  border: 2px solid #0000cd; /* Updated blue border */
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -133,10 +151,3 @@ h1 {
   margin: 10px auto; /* Center the box and add spacing */
   border-radius: 10px; /* Optional: Rounded corners */
 }
-
-
-/* Adjust spacing for the overall layout */
-body {
-  margin-top: 30px; /* Push everything down to fit the new header */
-}
-
