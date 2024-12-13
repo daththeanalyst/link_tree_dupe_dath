@@ -11,6 +11,8 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 0px; /* Push everything down to fit the new header */
+  padding-bottom: 20px; /* Add padding to leave space at the bottom */
+
   overflow: hidden;
 }
 
