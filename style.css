@@ -97,8 +97,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0; /* Add spacing around the section */
-  padding: 10px 0; /* Add spacing inside the section */
+  margin: 20px 0; /* Spacing around the section */
+  padding: 10px 0; /* Spacing inside the section */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 28px; /* Adjust font size */
@@ -108,7 +108,6 @@ h1 {
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
   width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the box horizontally */
   position: relative; /* Enable pseudo-elements for the split border effect */
 }
 
@@ -128,7 +127,8 @@ h1 {
 
 #header-border::after {
   bottom: 0; /* Position at the bottom */
-  right: 0; /* Align the right half */
+  left: 0; /* Align the left half */
+  transform: translateY(100%); /* Fix alignment by placing it below the container */
 }
 
 #header-border span {
@@ -136,6 +136,7 @@ h1 {
   background: #ffffff; /* Match background color to create the gap */
   padding: 0 10px; /* Space around the text to extend the gap */
 }
+
 
 /* Description with Border */
 #description-border {
