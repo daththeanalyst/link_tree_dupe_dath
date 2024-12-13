@@ -132,22 +132,21 @@ h1 {
 }
 
 
-/* Description with Border */
+/* Description Styling */
 #description-border {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
   background: #ffffff;
-  border: 2px solid #0000cd; /* Updated blue border */
+  border: 2px solid #0000cd; /* Blue border */
   font-size: 16px;
-  
   line-height: 1.6;
   text-align: center;
   width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the box and add spacing */
+  margin: 0 auto; /* Center the box */
   border-radius: 10px; /* Optional: Rounded corners */
-}
+  margin-bottom: 10px; /* Smaller space below description */
 
 /* Social Icons Section */
 #social-icons {
@@ -155,8 +154,8 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px; /* Space between the icons */
-  margin: 0px 0; /* Space above and below the section */
-}
+  margin-top: 10px; /* Smaller space above the icons */
+  margin-bottom: 40px; /* Larger space below the icons (towards links) */
 
 #social-icons a {
   text-decoration: none;
