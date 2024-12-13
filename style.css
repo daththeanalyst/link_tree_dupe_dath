@@ -167,3 +167,33 @@ h1 {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
 
+@media (max-width: 1920px) {
+  :root {
+    --scale: 1; /* Standard scale for large screens */
+  }
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --scale: 0.9; /* Scale down slightly for smaller screens */
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --scale: 0.8; /* Reduce scale for medium-sized displays */
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --scale: 0.7; /* Further reduce for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --scale: 0.6; /* Scale down for mobile devices */
+  }
+}
+
