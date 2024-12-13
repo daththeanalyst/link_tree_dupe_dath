@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: flex-start; /* Distribute sections evenly */
   transform: scale(0.67); /* Scale everything down to 67% */
-  min-height: 0vh; /* Adjust height to compensate for scaling */
+  min-height: 10vh; /* Adjust height to compensate for scaling */
   margin: 0;
   padding: 0;
   margin-top: 15px; /* Push everything down to fit the new header */
