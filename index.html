@@ -1,20 +1,47 @@
-<head>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    rel="stylesheet"
-  />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Linktree</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Profile Section -->
+    <div id="profile">
+      <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Your Name</h1>
+      <p class="description">Short description about yourself, e.g., "Machine Learning Enthusiast and Business Student."</p>
+    </div>
 
-<body>
-  <!-- Header Section -->
-  <div id="header">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <h1>Your Name</h1>
-    <p class="description">Short description about yourself (e.g., Machine Learning Enthusiast, Business Student).</p>
-  </div>
+    <!-- Links Section -->
+    <div id="links">
+      <a href="https://github.com/daththeanalyst" target="_blank">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+      <a href="https://instagram.com/your-profile" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Instagram
+      </a>
+      <a href="https://open.spotify.com/user/your-profile" target="_blank">
+        <i class="fab fa-spotify"></i>
+        Spotify
+      </a>
+      <a href="https://your-personal-portfolio.com" target="_blank">
+        <i class="fas fa-user-circle"></i>
+        Portfolio
+      </a>
+    </div>
 
-  <!-- Links Section -->
-  <div id="links"></div>
-
-  <script type="module" src="index.js"></script>
-</body>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
