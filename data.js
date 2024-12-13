@@ -6,7 +6,7 @@ const links = [
   },
   { 
     title: "LinkedIn", 
-    url: "https://linkedin.com/in/your-profile", 
+    url: "https://linkedin.com/in/dimitriosath/", 
     icon: "fab fa-linkedin" 
   },
   { 
