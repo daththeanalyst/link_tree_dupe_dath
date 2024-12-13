@@ -1,9 +1,9 @@
 const links = [
   { title: "GitHub", url: "https://github.com/daththeanalyst" },
   { title: "LinkedIn", url: "https://linkedin.com/in/your-profile" },
-  { title: "Twitter", url: "https://twitter.com/your-profile" },
-  { title: "Email Me", url: "mailto:your-email@example.com" },
+  { title: "Instagram", url: "https://instagram.com/your-profile" },
+  { title: "Spotify", url: "https://open.spotify.com/user/your-profile" },
+  { title: "Portfolio", url: "https://your-personal-portfolio.com" },
 ];
 
-// Export the links so index.js can use them
 export default links;
