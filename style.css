@@ -22,8 +22,8 @@ body {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: calc(150px * 0.67); /* Scale down the width */
+  height: calc(150px * 0.67); /* Scale down the height */
   border-radius: 50%;
   border: 4px solid #ffffff; /* Blue border */
   object-fit: cover; /* Focus on the center of the image */
@@ -147,15 +147,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
   background: #ffffff;
   border: 2px solid #0000cd; /* Blue border */
-  font-size: 16px;
-  line-height: 1.6;
   text-align: center;
-  width: 80%; /* Adjust width as needed */
   margin: 0 auto; /* Center the box */
   margin-bottom: 20px; /* Reduce or remove space below description */
+  font-size: calc(16px * 0.67); /* Scale down font size */
+  line-height: calc(1.6 * 0.67); /* Scale down line height */
+  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
+  width: calc(80% * 0.67); /* Scale down width */
 }
 
 
@@ -176,9 +176,9 @@ h1 {
   align-items: center;
   text-decoration: none; /* Remove underline */
   color: #0000cd; /* Blue icon color */
-  font-size: 32px; /* Icon size */
-  width: 50px; /* Consistent icon container size */
-  height: 50px; /* Consistent icon container size */
+  font-size: calc(32px * 0.67); /* Scale down icon size */
+  width: calc(50px * 0.67); /* Scale down icon container size */
+  height: calc(50px * 0.67); /* Scale down icon container size */
   border: 2px solid #0000cd; /* Add border around icons */
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
