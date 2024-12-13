@@ -1,7 +1,9 @@
 /* General Layout */
+/* General Layout */
 body {
   font-family: Arial, sans-serif;
-  background: #f8f9fa; /* Light gray background */
+  background: #ffffff; /* White background */
+  color: #0505cb; /* Text color */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,21 +23,19 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #0077cc; /* Blue border */
-  object-fit: cover; /* Ensure the image fits inside the circle */
-  object-position: center; /* Focus on the center of the image */
+  border: 4px solid #0505cb; /* Blue border */
+  object-fit: cover; /* Focus on the center of the image */
+  object-position: center;
   margin-bottom: 20px;
 }
 
 h1 {
   font-size: 28px;
-  color: #333;
   margin: 10px 0;
 }
 
 .description {
   font-size: 16px;
-  color: #555;
   margin-bottom: 30px;
 }
 
@@ -49,11 +49,11 @@ h1 {
 
 #links a {
   text-decoration: none;
-  background: white; /* White background for the cards */
-  color: #0077cc;
+  background: #ffffff; /* White background for the links */
+  color: #0505cb; /* Blue text */
   padding: 15px 20px;
   border-radius: 15px; /* Curved corners */
-  border: 2px solid #0077cc;
+  border: 2px solid #0505cb; /* Blue border */
   width: 300px; /* Fixed width for consistency */
   text-align: center;
   font-size: 18px;
@@ -64,8 +64,12 @@ h1 {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#links a i {
+#links a i,
+#links a img {
   font-size: 24px; /* Icon size */
+  color: #0505cb; /* Ensure icons match text color */
+  width: 24px;
+  height: 24px;
 }
 
 #links a:hover {
@@ -79,6 +83,7 @@ h1 {
     width: 90%; /* Adjust width for smaller screens */
   }
 }
+
 /* Custom Icon Styling */
 .custom-icon {
   width: 24px; /* Icon size */
