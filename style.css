@@ -245,3 +245,11 @@ h1 {
     width: 90%;
   }
 }
+/* General Scaling for Smaller Screens */
+@media (max-width: 1600px) {
+  body {
+    transform: scale(1.25); /* Scale everything by 125% */
+    transform-origin: top center; /* Keep scaling centered */
+    height: 80vh; /* Adjust height to fit scaled content */
+  }
+}
