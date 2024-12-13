@@ -119,6 +119,21 @@ h1 {
 #header-border span {
   z-index: 2; /* Ensure the text is above any background effects */
 }
+#description-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background: #ffffff;
+  border: 2px solid #0505cb;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+  margin: 10px auto; /* Center the box and add spacing */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
 
 /* Adjust spacing for the overall layout */
 body {
