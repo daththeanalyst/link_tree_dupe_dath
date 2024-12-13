@@ -10,6 +10,8 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  padding-bottom: 20px; /* Add space to the bottom */
+
 
 
   overflow: hidden;
@@ -46,7 +48,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between links */
+  gap: 8px; /* Space between links */
 }
 
 #links a {
