@@ -53,7 +53,7 @@ h1 {
   color: #0000cd; /* Updated blue text color */
   padding: 15px 20px;
   border-radius: 15px; /* Curved corners */
-  border: 2px solid #0000cd; /* Updated blue border */
+  border: 2px solid #0000cd; /* Blue border */
   width: 300px; /* Fixed width for consistency */
   text-align: center;
   font-size: 18px;
@@ -62,7 +62,9 @@ h1 {
   gap: 10px; /* Space between the icon and text */
   justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 15px; /* Add space below each link */
 }
+
 
 #links a i,
 #links a img {
