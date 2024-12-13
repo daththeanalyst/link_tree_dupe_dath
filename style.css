@@ -53,18 +53,18 @@ h1 {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
   color: #0000cd; /* Updated blue text color */
-  padding: 15px 20px;
-  border-radius: 15px; /* Curved corners */
   border: 2px solid #0000cd; /* Blue border */
-  width: 300px; /* Fixed width for consistency */
   text-align: center;
-  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 10px; /* Space between the icon and text */
   justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
   margin-bottom: 4px; /* Add space below each link */
+  font-size: calc(18px * 0.67); /* Scale down font size */
+  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
+  width: calc(320px * 0.67); /* Scale down link width */
+  border-radius: calc(15px * 0.67); /* Scale down corner radius */
 }
 
 
