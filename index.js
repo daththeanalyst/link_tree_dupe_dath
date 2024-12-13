@@ -11,16 +11,23 @@ links.forEach((link) => {
   linkElement.href = link.url;
   linkElement.target = "_blank"; // Open links in a new tab
 
-  // Add icon
-  const icon = document.createElement("i");
-  icon.className = link.icon; // Use the icon class from data.js
+  // Check if a custom icon is provided
+  if (link.customIcon) {
+    const customIcon = document.createElement("img");
+    customIcon.src = link.customIcon;
+    customIcon.alt = `${link.title} icon`;
+    customIcon.className = "custom-icon"; // Add a class for styling
+    linkElement.appendChild(customIcon);
+  } else {
+    // Add Font Awesome icon
+    const icon = document.createElement("i");
+    icon.className = link.icon; // Use the icon class from data.js
+    linkElement.appendChild(icon);
+  }
 
   // Add title
   const text = document.createElement("span");
   text.textContent = link.title;
-
-  // Append icon and text to the link
-  linkElement.appendChild(icon);
   linkElement.appendChild(text);
 
   linksContainer.appendChild(linkElement);
