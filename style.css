@@ -251,6 +251,6 @@ h1 {
     transform: scale(1.25); /* Scale everything by 125% */
     transform-origin: top center; /* Keep scaling centered */
     height: 80vh; /* Adjust height to fit scaled content */
-    margin-top: -50px; /* Adjust negative margin to shift content up */
+    margin-top: -100px; /* Adjust negative margin to shift content up */
   }
 }
