@@ -92,18 +92,18 @@ h1 {
   object-fit: contain; /* Ensure the image fits well */
 }
 
-/* Header with Split Border */
+/* Header with Top and Bottom Split Borders */
 #header-border {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0; /* Add spacing around the border */
-  padding: 10px 0; /* Add spacing inside the border */
+  margin: 20px 0; /* Add spacing around the section */
+  padding: 10px 0; /* Add spacing inside the section */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 28px; /* Adjust font size */
   font-weight: bold; /* Bold font weight for the name */
-  color: #0000cd; /* Updated blue font color */
+  color: #0000cd; /* Blue font color */
   text-align: center;
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
@@ -117,17 +117,18 @@ h1 {
   content: '';
   position: absolute;
   height: 2px; /* Border thickness */
-  background: #0000cd; /* Updated blue color */
+  background: #0000cd; /* Blue color */
   width: 50%; /* Each border spans half the width */
-  top: 0; /* Position at the top */
 }
 
 #header-border::before {
-  left: 0; /* Align the left side */
+  top: 0; /* Position at the top */
+  left: 0; /* Align the left half */
 }
 
 #header-border::after {
-  right: 0; /* Align the right side */
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Align the right half */
 }
 
 #header-border span {
