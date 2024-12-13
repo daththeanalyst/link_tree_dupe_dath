@@ -94,6 +94,7 @@ h1 {
 
 /* Header with Border */
 /* Header with Border */
+/* Header with Border */
 #header-border {
   display: flex;
   justify-content: center;
@@ -104,7 +105,7 @@ h1 {
   border: 2px solid #0505cb; /* Blue border */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 28px; /* Adjust font size */
-  font-weight: 500; /* Set a lighter font weight */
+  font-weight: bold; /* Bold font weight for the name */
   color: #0505cb; /* Blue font color */
   text-align: center;
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
@@ -112,6 +113,7 @@ h1 {
   width: 80%; /* Adjust width as needed */
   margin: 0 auto; /* Center the box horizontally */
 }
+
 
 
 #header-border span {
