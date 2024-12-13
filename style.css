@@ -6,14 +6,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Distribute sections evenly */
-  transform: scale(0.67); /* Scale everything down to 67% */
-  min-height: 10vh; /* Adjust height to compensate for scaling */
+  justify-content: center;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  margin-top: 15px; /* Push everything down to fit the new header */
-  overflow: hidden; /* Disable scrolling */
-
+  margin-top: 30px; /* Push everything down to fit the new header */
 }
 
 /* Profile Section */
@@ -47,7 +44,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* Space between links */
+  gap: 20px; /* Space between links */
 }
 
 #links a {
@@ -169,7 +166,6 @@ h1 {
   gap: 20px; /* Space between the icons */
   margin-top: 10px; /* Space above the icons */
   margin-bottom: 40px; /* Space below the icons */
-  transform: scale(1.2);
 }
 
 #social-icons a {
@@ -194,4 +190,4 @@ h1 {
 /* Ensure consistent spacing and alignment for icons */
 #social-icons i {
   margin: 0; /* Remove any unwanted margin inside icons */
-}
+} 
