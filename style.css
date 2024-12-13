@@ -245,16 +245,6 @@ h1 {
     width: 90%;
   }
 }
-/* General Scaling for Smaller Screens */
-@media (min-width: 1601px) {
-  body {
-    transform: scale(1); /* Reset scaling */
-    transform-origin: top center; /* Keep scaling centered */
-    height: 100vh; /* Use full viewport height */
-    margin-top: 0; /* Remove unnecessary spacing */
-  }
-}
-
 @media (max-width: 1600px) {
   body {
     transform: scale(1.25); /* Scale everything by 125% */
