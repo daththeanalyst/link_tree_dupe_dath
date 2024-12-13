@@ -195,54 +195,32 @@ h1 {
 #social-icons i {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
-@media (max-width: 768px) {
-  /* For smaller tablets */
-  .profile-pic {
-    width: 26vw;
-    height: 26vw;
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    transform: scale(1); /* Ensure no scaling for tablets */
+    transform-origin: top center; /* Keep alignment */
+    height: 95vh; /* Use 95% of the viewport height */
+    margin-top: 0; /* Remove any extra space */
   }
 
-  #description-border {
-    font-size: 1.2rem;
-  }
-
-  #social-icons a {
-    font-size: 1.4rem;
-    width: 45px;
-    height: 45px;
-  }
-
-  #links a {
-    font-size: 1rem;
-    padding: 8px 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* For mobile devices */
   #header-border {
-    font-size: 6vw; /* Slightly larger header text */
+    font-size: 2.5rem; /* Adjust header font size */
+    margin-top: 10px; /* Add slight spacing at the top */
   }
 
   .profile-pic {
-    width: 35vw;
-    height: 35vw;
+    width: 120px; /* Slightly smaller profile picture */
+    height: 120px;
   }
 
   #description-border {
-    font-size: 1rem; /* Smaller description for mobile */
+    font-size: 1rem; /* Adjust description text size */
+    margin-bottom: 20px; /* Reduce space below description */
   }
 
-  #social-icons a {
-    font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
-  }
+  #social-icons {
+    gap: 15px; /* Reduce gap between icons */
+    margin-top: 10px; /* Slightly smaller margin above icons */
+    margin-bottom: 20px;
 
-  #links a {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-    width: 90%;
-  }
-}
 
