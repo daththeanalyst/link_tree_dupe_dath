@@ -151,7 +151,7 @@ h1 {
   border: 2px solid #0000cd; /* Blue border */
   text-align: center;
   margin: 0 auto; /* Center the box */
-  margin-bottom: 20px; /* Reduce or remove space below description */
+  margin-bottom: -20px; /* Reduce or remove space below description */
   font-size: calc(16px * 0.67); /* Scale down font size */
   line-height: calc(1.6 * 0.67); /* Scale down line height */
   padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
@@ -166,8 +166,8 @@ h1 {
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Align the icons vertically */
   gap: 20px; /* Space between the icons */
-  margin-top: 10px; /* Space above the icons */
-  margin-bottom: 40px; /* Space below the icons */
+  margin-top: 0px; /* Space above the icons */
+  margin-bottom: 20px; /* Space below the icons */
 }
 
 #social-icons a {
