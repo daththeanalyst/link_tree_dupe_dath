@@ -195,3 +195,55 @@ h1 {
 #social-icons i {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
+@media (max-width: 768px) {
+  #header-border {
+    font-size: 5vw; /* Smaller font size for smaller screens */
+  }
+
+  .profile-pic {
+    width: 30vw; /* Smaller profile picture */
+    height: 30vw;
+  }
+
+  #description-border {
+    font-size: 1rem; /* Adjust description font size */
+  }
+
+  #social-icons a {
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  #links a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-border {
+    font-size: 6vw; /* Further reduce font size */
+  }
+
+  .profile-pic {
+    width: 35vw; /* Smaller profile picture for phones */
+    height: 35vw;
+  }
+
+  #description-border {
+    font-size: 0.9rem; /* Smaller description font */
+  }
+
+  #social-icons a {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  #links a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    width: 90%; /* Increase width for smaller screens */
+  }
+}
