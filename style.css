@@ -6,11 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: space-evenly; /* Distribute sections evenly */
+  transform: scale(0.67); /* Scale everything down to 67% */
+  min-height: 150vh; /* Adjust height to compensate for scaling */
   margin: 0;
   padding: 0;
-  margin-top: 30px; /* Push everything down to fit the new header */
+  margin-top: 15px; /* Push everything down to fit the new header */
 }
 
 /* Profile Section */
@@ -44,7 +45,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between links */
+  gap: 15px; /* Space between links */
 }
 
 #links a {
@@ -166,6 +167,8 @@ h1 {
   gap: 20px; /* Space between the icons */
   margin-top: 10px; /* Space above the icons */
   margin-bottom: 40px; /* Space below the icons */
+  transform: scale(1.2);
+  background-color: #e6e6ff;
 }
 
 #social-icons a {
