@@ -38,6 +38,7 @@ h1 {
 }
 
 /* Links Section */
+/* Links Section */
 #links {
   display: flex;
   flex-direction: column;
@@ -57,18 +58,18 @@ h1 {
   font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between the logo and text */
+  gap: 10px; /* Space between the icon and text */
+  justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#links a i {
+  font-size: 24px; /* Icon size */
 }
 
 #links a:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#links img {
-  width: 24px; /* Logo size */
-  height: 24px;
 }
 
 /* Responsive Design */
@@ -77,3 +78,4 @@ h1 {
     width: 90%; /* Adjust width for smaller screens */
   }
 }
+
