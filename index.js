@@ -2,6 +2,9 @@ import links from "./data.js";
 
 const linksContainer = document.getElementById("links");
 
+// Clear the container to prevent duplicates
+linksContainer.innerHTML = "";
+
 // Generate links dynamically
 links.forEach((link) => {
   const linkElement = document.createElement("a");
