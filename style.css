@@ -173,19 +173,12 @@ h1 {
 
   }
 }
-/* Small monitors and laptops */
-@media (max-width: 1600px) {
-  body {
-    transform: scale(0.8);
-    transform-origin: top center;
-    height: auto;
-  }
-}
+
 
 /* Smaller laptops or 13-15 inch monitors */
 @media (max-width: 1366px) {
   body {
-    transform: scale(1.1);
+    transform: scale(1.5);
     transform-origin: top center;
   }
 }
