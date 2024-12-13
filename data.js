@@ -6,5 +6,4 @@ const links = [
   { title: "Instagram", url: "https://instagram.com/your-profile", icon: "fab fa-instagram" },
   { title: "Contact Me", url: "mailto:your-email@example.com", icon: "fas fa-envelope" },
 ];
-
 export default links;
