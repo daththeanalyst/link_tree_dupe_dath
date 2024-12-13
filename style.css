@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; /* Distribute sections evenly */
+  justify-content: flex-start; /* Distribute sections evenly */
   transform: scale(0.67); /* Scale everything down to 67% */
   min-height: 150vh; /* Adjust height to compensate for scaling */
   margin: 0;
