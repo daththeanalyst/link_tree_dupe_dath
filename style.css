@@ -158,22 +158,36 @@ h1 {
 
 
 /* Social Icons Section */
+/* Social Icons Section */
 #social-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Align the icons vertically */
   gap: 20px; /* Space between the icons */
-  margin-top: 10px; /* Smaller space above the icons */
-  margin-bottom: 30px; /* Larger space below the icons (towards links) */
+  margin-top: 10px; /* Space above the icons */
+  margin-bottom: 40px; /* Space below the icons */
+}
 
 #social-icons a {
-  text-decoration: none;
-  color: #0000cd; /* Updated blue color */
-  font-size: 28px; /* Size of the icons */
-  transition: transform 0.3s, color 0.3s;
+  display: flex; /* Ensure the icons align properly */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+  color: #0000cd; /* Blue icon color */
+  font-size: 32px; /* Icon size */
+  width: 50px; /* Consistent icon container size */
+  height: 50px; /* Consistent icon container size */
+  border: 2px solid #0000cd; /* Add border around icons */
+  border-radius: 50%; /* Make the icon container circular */
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 #social-icons a:hover {
-  transform: scale(1.2); /* Slightly enlarge on hover */
-  color: #1e90ff; /* A lighter blue on hover (optional) */
+  transform: scale(1.2); /* Enlarge icons slightly on hover */
+  background-color: #e6e6ff; /* Optional hover background color */
+}
+
+/* Ensure consistent spacing and alignment for icons */
+#social-icons i {
+  margin: 0; /* Remove any unwanted margin inside icons */
 }
