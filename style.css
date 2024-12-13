@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  margin-top: -20px;
   padding-bottom: 20px; /* Add space to the bottom */
   overflow: hidden;
 }
@@ -95,6 +96,8 @@ h1 {
   text-transform: uppercase; /* Ensure all caps */
   width: 80%; /* Adjust width as needed */
   position: relative; /* Enable pseudo-elements for the split border effect */
+  margin-top: 0px; /* Ensure the header starts closer to the top */
+
 }
 #header-border::before,
 #header-border::after {
