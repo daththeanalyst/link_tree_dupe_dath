@@ -139,7 +139,6 @@ h1 {
 }
 
 
-/* Description Styling */
 #description-border {
   display: flex;
   justify-content: center;
@@ -152,8 +151,9 @@ h1 {
   text-align: center;
   width: 80%; /* Adjust width as needed */
   margin: 0 auto; /* Center the box */
-  border-radius: 10px; /* Optional: Rounded corners */
-  margin-bottom: 10px; /* Smaller space below description */
+  margin-bottom: 20px; /* Reduce or remove space below description */
+}
+
 
 /* Social Icons Section */
 #social-icons {
@@ -162,7 +162,7 @@ h1 {
   align-items: center;
   gap: 20px; /* Space between the icons */
   margin-top: 10px; /* Smaller space above the icons */
-  margin-bottom: 40px; /* Larger space below the icons (towards links) */
+  margin-bottom: 30px; /* Larger space below the icons (towards links) */
 
 #social-icons a {
   text-decoration: none;
