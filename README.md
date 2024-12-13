@@ -14,4 +14,5 @@ Feel free to **clone**, **fork**, or modify this project to suit your needs. Con
 1. Open your terminal or Git Bash.
 2. Run the following command:
    ```bash
-   git clone https://github.com/daththeanalyst/linktreedath.git
+   git clone https://github.com/daththeanalyst/personallinktreedupe.git
+
