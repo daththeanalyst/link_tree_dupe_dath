@@ -245,21 +245,4 @@ h1 {
     width: 90%;
   }
 }
-@media (max-width: 1600px) {
-  body {
-    transform: scale(1.25); /* Scale everything by 125% */
-    transform-origin: top center; /* Keep scaling centered */
-    height: 80vh; /* Adjust height for scaled content */
-    margin-top: -50px; /* Adjust to reduce space above */
-  }
-}
-
-@media (min-width: 2560px) { /* For 27-inch 2560px screens */
-  body {
-    transform: scale(0.8); /* Scale to 80% of the 1600px display */
-    transform-origin: top center; /* Keep scaling aligned */
-    height: 90vh; /* Add a slight reduction in height to avoid excess spacing */
-    margin-top: 20px; /* Optional: Add slight top spacing */
-  }
-}
 
