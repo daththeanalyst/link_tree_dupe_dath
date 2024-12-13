@@ -246,11 +246,30 @@ h1 {
   }
 }
 /* General Scaling for Smaller Screens */
+@media (min-width: 1601px) {
+  body {
+    transform: scale(1); /* Reset scaling */
+    transform-origin: top center; /* Keep scaling centered */
+    height: 100vh; /* Use full viewport height */
+    margin-top: 0; /* Remove unnecessary spacing */
+  }
+}
+
 @media (max-width: 1600px) {
   body {
     transform: scale(1.25); /* Scale everything by 125% */
     transform-origin: top center; /* Keep scaling centered */
-    height: 80vh; /* Adjust height to fit scaled content */
-    margin-top: -100px; /* Adjust negative margin to shift content up */
+    height: 80vh; /* Adjust height for scaled content */
+    margin-top: -50px; /* Adjust to reduce space above */
   }
 }
+
+@media (min-width: 2560px) { /* For 27-inch 2560px screens */
+  body {
+    transform: scale(0.8); /* Scale to 80% of the 1600px display */
+    transform-origin: top center; /* Keep scaling aligned */
+    height: 90vh; /* Add a slight reduction in height to avoid excess spacing */
+    margin-top: 20px; /* Optional: Add slight top spacing */
+  }
+}
+
