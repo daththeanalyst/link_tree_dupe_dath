@@ -92,3 +92,31 @@ h1 {
   object-fit: contain; /* Ensure the image fits well */
 }
 
+/* Header with Border */
+#header-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background: #ffffff; /* White background */
+  border: 2px solid #0505cb; /* Blue border */
+  font-family: "Arial Black", sans-serif; /* Bold font similar to the example */
+  font-size: 32px; /* Adjust font size as needed */
+  color: #0505cb; /* Blue font color */
+  width: 80%; /* Adjust width to fit your design */
+  text-align: center;
+  letter-spacing: 2px; /* Space between letters for the bold effect */
+  text-transform: uppercase; /* Ensure all caps */
+  position: relative; /* For potential future alignment */
+}
+
+#header-border span {
+  z-index: 2; /* Ensure the text is above any background effects */
+}
+
+/* Adjust spacing for the overall layout */
+body {
+  margin-top: 30px; /* Push everything down to fit the new header */
+}
+
