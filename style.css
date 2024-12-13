@@ -11,18 +11,13 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 20px; /* Add space to the bottom */
-
-
-
   overflow: hidden;
 }
-
 /* Profile Section */
 #profile {
   text-align: center;
   margin-bottom: 40px;
 }
-
 .profile-pic {
   width: calc(150px * 0.67); /* Scale down the width */
   height: calc(150px * 0.67); /* Scale down the height */
@@ -32,17 +27,14 @@ body {
   object-position: center;
   margin-bottom: 20px;
 }
-
 h1 {
   font-size: 28px;
   margin: 10px 0;
 }
-
 .description {
   font-size: 16px;
   margin-bottom: 30px;
 }
-
 /* Links Section */
 #links {
   display: flex;
@@ -50,7 +42,6 @@ h1 {
   align-items: center;
   gap: 8px; /* Space between links */
 }
-
 #links a {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
@@ -68,8 +59,6 @@ h1 {
   width: calc(320px * 0.67); /* Scale down link width */
   border-radius: calc(15px * 0.67); /* Scale down corner radius */
 }
-
-
 #links a i,
 #links a img {
   font-size: 24px; /* Icon size */
@@ -77,19 +66,10 @@ h1 {
   width: 24px;
   height: 24px;
 }
-
 #links a:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  #links a {
-    width: 90%; /* Adjust width for smaller screens */
-  }
-}
-
 /* Custom Icon Styling */
 .custom-icon {
   width: 24px; /* Icon size */
@@ -97,7 +77,6 @@ h1 {
   border-radius: 5px; /* Slightly rounded edges for consistency */
   object-fit: contain; /* Ensure the image fits well */
 }
-
 /* Header with Full-Width Split Borders */
 /* Header with Full-Width Split Borders */
 #header-border {
@@ -117,7 +96,6 @@ h1 {
   width: 80%; /* Adjust width as needed */
   position: relative; /* Enable pseudo-elements for the split border effect */
 }
-
 #header-border::before,
 #header-border::after {
   content: '';
@@ -126,25 +104,20 @@ h1 {
   background: #0000cd; /* Blue color */
   width: 100%; /* Make the borders span the full width */
 }
-
 #header-border::before {
   top: 0; /* Position at the top */
   left: 0; /* Ensure it starts from the very left */
 }
-
 #header-border::after {
   bottom: 0; /* Position at the bottom */
   left: 0; /* Ensure it starts from the very left */
 }
-
 #header-border span {
   z-index: 2; /* Ensure the text is above the border */
   background: #ffffff; /* Match background color to create the gap */
   padding: 0 20px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
-
-
 #description-border {
   display: flex;
   justify-content: center;
@@ -159,8 +132,6 @@ h1 {
   padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
   width: calc(80% * 0.67); /* Scale down width */
 }
-
-
 /* Social Icons Section */
 /* Social Icons Section */
 #social-icons {
@@ -171,7 +142,6 @@ h1 {
   margin-top: 0px; /* Space above the icons */
   margin-bottom: 20px; /* Space below the icons */
 }
-
 #social-icons a {
   display: flex; /* Ensure the icons align properly */
   justify-content: center;
@@ -185,56 +155,16 @@ h1 {
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
 }
-
 #social-icons a:hover {
   transform: scale(1.2); /* Enlarge icons slightly on hover */
   background-color: #e6e6ff; /* Optional hover background color */
 }
-
 /* Ensure consistent spacing and alignment for icons */
 #social-icons i {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
-/* For smaller monitors (13-15 inch display, approx. 1366px width) */
-@media (max-width: 1366px) {
-  body {
-    transform: scale(1.15); /* Adjust scaling to fit better */
-    transform-origin: top center; /* Keep scaling centered */
-    height: 90vh; /* Ensure the height fits well */
-    margin-top: 0; /* Remove extra space above */
-  }
-
-  #header-border {
-    font-size: 2rem; /* Slightly smaller header font */
-    margin-top: 10px; /* Adjust spacing at the top */
-  }
-
-  .profile-pic {
-    width: 130px; /* Slightly reduce profile picture size */
-    height: 130px;
-  }
-
-  #description-border {
-    font-size: 0.9rem; /* Slightly smaller description */
-    margin-bottom: 15px; /* Adjust spacing below description */
-  }
-
-  #social-icons {
-    gap: 15px; /* Reduce gap between icons */
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  #social-icons a {
-    font-size: 1.4rem; /* Adjust icon size */
-    width: 40px;
-    height: 40px;
-  }
-
+@media (max-width: 600px) {
   #links a {
-    font-size: 1rem; /* Adjust link font size */
-    width: 280px; /* Reduce link width slightly */
-    padding: 12px 18px; /* Adjust padding for consistency */
-    margin-bottom: 12px; /* Reduce gap between links */
+    width: 150%; /* Adjust width for smaller screens */
   }
 }
