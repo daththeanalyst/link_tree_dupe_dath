@@ -198,7 +198,7 @@ h1 {
   transition: transform 0.3s, background-color 0.3s;
   box-sizing: border-box; /* Include padding in button size */
   display: inline-block; /* Ensure the icon is treated as a block for transformation */
-  transform: scaleX(-1); /* Flip horizontally */
+  transform: scaleY(-1); /* Flip horizontally */
 
 }
 
