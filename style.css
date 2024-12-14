@@ -14,19 +14,22 @@ body {
   box-sizing: border-box; /* Ensure padding is included in width/height */
 }
 /* Profile Section */
+/* Profile Section */
 #profile {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Reduced space below the profile */
 }
+
 .profile-pic {
-  width: calc(160px * 0.67); /* Scale down the width */
-  height: calc(160px * 0.67); /* Scale down the height */
-  border-radius: 50%;
+  width: calc(200px * 0.8); /* Increased profile picture width */
+  height: calc(200px * 0.8); /* Increased profile picture height */
+  border-radius: 50%; /* Circular profile picture */
   border: 2px solid #0000cd; /* Blue border */
   object-fit: cover; /* Focus on the center of the image */
   object-position: center;
   margin-bottom: 20px;
 }
+
 h1 {
   font-size: 28px;
   margin: 10px 0;
@@ -136,6 +139,8 @@ h1 {
   height: 100px; /* Fixed height */
   border: 3px solid #0000cd; /* Blue border */
   box-sizing: border-box; /* Ensure padding and border don't affect dimensions */
+  border-radius: 15px; /* Added border radius to match the link buttons */
+
 }
 
 /* Social Icons Section */
@@ -168,18 +173,15 @@ h1 {
   background-color: #e6e6ff; /* Subtle hover background */
 }
 
-/* Updated Share Button Styling */
 #share-button {
   position: absolute;
   top: 8px; /* Adjust to fit within header padding */
   right: 8px; /* Adjust to align with header edge */
-  background: #ffffff; /* White background for visibility */
+  background: none; /* Remove background */
   color: #0000cd; /* Match your design's blue */
-  border: 2px solid #0000cd; /* Blue border */
-  border-radius: 8px; /* Slightly rounded edges */
-  width: 44px; /* Updated button width */
-  height: 49px; /* Updated button height */
-  padding: 8px; /* Padding around the inner content */
+  border: none; /* No border */
+  width: 44px; /* Button width */
+  height: 49px; /* Button height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,12 +192,13 @@ h1 {
 
 #share-button i {
   font-size: 28px; /* Icon size */
-  color: #0000cd; /* Icon color matches blue theme */
+  transform: rotate(180deg); /* Reverse the icon direction */
+  color: #0000cd; /* Icon color */
 }
 
 #share-button:hover {
   transform: scale(1.1); /* Slight hover effect */
-  background-color: #e6e6ff; /* Subtle hover background */
+  color: #00008b; /* Darker blue for hover effect */
 }
 
 /* Ensure no overlap with the header on different screen sizes */
