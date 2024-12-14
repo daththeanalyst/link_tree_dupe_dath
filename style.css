@@ -132,7 +132,7 @@ h1 {
   font-size: calc(16px * 0.67); /* Scale down font size */
   line-height: calc(1.6 * 0.67); /* Scale down line height */
   padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
-  width: calc(80% * 0.67); /* Scale down width */
+  width: calc(80% * 1); /* Scale down width */
   border: 3px solid #0000cd; /* Blue border */
 
 }
