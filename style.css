@@ -191,6 +191,7 @@ h1 {
 }
 
 
+/* General Scaling for All Displays */
 @media (max-width: 1920px) {
   :root {
     --scale: 1; /* Standard scale for large screens */
@@ -220,14 +221,16 @@ h1 {
     --scale: 0.6; /* Scale down for mobile devices */
   }
 }
+
 /* For large displays (e.g., 1920px width and above) */
 @media (min-width: 1920px) {
   body {
     transform: scale(1.5); /* Scale up for large screens */
     transform-origin: top center; /* Ensure scaling is centered */
-    padding-top: 0; /* Remove extra padding at the top */
-    padding-bottom: 0; /* Remove extra padding at the bottom */
+    padding: 0; /* Remove padding from top and bottom */
+    margin: 0; /* Ensure no extra margin around the body */
     height: 100vh; /* Prevent excessive space above and below */
+    overflow: hidden; /* Hide any unnecessary scrollbars */
   }
 }
 
@@ -235,9 +238,10 @@ h1 {
   body {
     transform: scale(1.75); /* Scale up more for ultra-wide screens */
     transform-origin: top center;
-    padding-top: 0; /* Remove extra padding at the top */
-    padding-bottom: 0; /* Remove extra padding at the bottom */
+    padding: 0; /* Remove padding from top and bottom */
+    margin: 0; /* Ensure no extra margin around the body */
     height: 100vh; /* Ensure content fits the viewport */
+    overflow: hidden; /* Hide any unnecessary scrollbars */
   }
 }
 
@@ -245,5 +249,11 @@ h1 {
 #share-button {
   top: 10px; /* Adjust the top spacing */
   right: 15px; /* Adjust the right spacing */
+  position: absolute; /* Ensure it stays on the header */
+  z-index: 10; /* Make sure it’s above other elements */
 }
 
+/* For consistency, ensure no horizontal or vertical scrollbars */
+html, body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
