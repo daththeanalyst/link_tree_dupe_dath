@@ -170,7 +170,7 @@ h1 {
 } 
 #share-button {
     position: absolute;
-    top: 10px; /* Adjust to fit your header spacing */
+    top: 6px; /* Adjust to fit your header spacing */
     right: 10px; /* Align to the right edge */
     background: #ffffff; /* White background for visibility */
     color: #0000cd; /* Match your design's blue */
