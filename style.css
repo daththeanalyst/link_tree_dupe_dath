@@ -85,7 +85,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column; /* Stack name and surname vertically */
-  margin: 0 auto; /* Center the header horizontally */
+  margin: 0; /* Center the header horizontally */
   padding: 8px; /* Adjust padding */
   width: 372px; /* Header width */
   height: 52px; /* Header height */
