@@ -13,31 +13,23 @@ body {
   padding: 32px; /* Padding around the page */
   box-sizing: border-box; /* Ensure padding is included in width/height */
 }
-/* Profile Section */
+
 /* Profile Section */
 #profile {
   text-align: center;
-  margin: 7px 0; /* 10px space above and below the profile */
+  margin: 10px 0; /* 10px space above and below the profile */
 }
 
 .profile-pic {
-  width: calc(200px * 0.8); /* Increased profile picture width */
-  height: calc(200px * 0.8); /* Increased profile picture height */
+  width: 160px; /* Profile picture width */
+  height: 160px; /* Profile picture height */
   border-radius: 50%; /* Circular profile picture */
   border: 2px solid #0000cd; /* Blue border */
   object-fit: cover; /* Focus on the center of the image */
   object-position: center;
-  margin: 7px 0; /* 10px space above and below */
+  margin: 10px 0; /* Space above and below the picture */
 }
 
-h1 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-.description {
-  font-size: 16px;
-  margin-bottom: 30px;
-}
 /* Links Section */
 #links a {
   text-decoration: none;
@@ -50,10 +42,10 @@ h1 {
   justify-content: center;
   gap: 10px; /* Space between the icon and text */
   transition: transform 0.3s, box-shadow 0.3s;
-  margin: 12px 0 0; /* Space below links */
+  margin: 12px 0; /* Space between links */
   font-size: 20px; /* Font size for text */
   padding: 12px 24px; /* Vertical and horizontal padding */
-  width: 372px; /* Width of the links */
+  width: 372px; /* Link width */
   height: 56px; /* Fixed height */
   border-radius: 15px; /* Curved corners for the links */
 }
@@ -71,15 +63,7 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }
 
-/* Custom Icon Styling */
-.custom-icon {
-  width: 28px; /* Icon size */
-  height: 28px;
-  border-radius: 5px; /* Slightly rounded edges for consistency */
-  object-fit: contain; /* Ensure the image fits well */
-}
-/* Header with Full-Width Split Borders */
-/* Header with Full-Width Split Borders */
+/* Header Section */
 #header-border {
   display: flex;
   justify-content: center;
@@ -130,7 +114,7 @@ h1 {
   line-height: 1.2; /* Adjust the spacing between lines */
 }
 
-
+/* Description Section */
 #description-border {
   display: flex;
   justify-content: center;
@@ -138,7 +122,7 @@ h1 {
   background: #ffffff;
   text-align: center;
   margin: 0px 0px 32px; /* Adjusted margins */
-  padding: px; /* Adjusted padding */
+  padding: 20px; /* Adjusted padding */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 20px; /* Adjusted font size */
   line-height: 1.5; /* Adjust line height for better readability */
@@ -147,10 +131,8 @@ h1 {
   border: 2px solid #0000cd; /* Blue border */
   box-sizing: border-box; /* Ensure padding and border don't affect dimensions */
   border-radius: 15px; /* Added border radius to match the link buttons */
-
 }
 
-/* Social Icons Section */
 /* Social Icons Section */
 #social-icons {
   width: 176px; /* Set the total width of the container */
@@ -161,8 +143,6 @@ h1 {
   gap: 20px; /* Space between the icons */
   margin: 0px 0px 20px; /* Space below icons */
   box-sizing: border-box; /* Ensure consistent sizing */
-
-
 }
 
 #social-icons a {
@@ -178,7 +158,6 @@ h1 {
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
   box-sizing: border-box; /* Ensure consistent border and padding dimensions */
-
 }
 
 #social-icons a:hover {
@@ -186,10 +165,11 @@ h1 {
   background-color: #e6e6ff; /* Subtle hover background */
 }
 
+/* Share Button */
 #share-button {
   position: absolute;
-  top: 8px; /* Adjust to fit within header padding */
-  right: 8px; /* Adjust to align with header edge */
+  top: -24px; /* Above the header */
+  right: 8px;
   background: none; /* Remove background */
   color: #0000cd; /* Match your design's blue */
   border: none; /* No border */
@@ -201,14 +181,12 @@ h1 {
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
   box-sizing: border-box; /* Include padding in button size */
-  display: inline-block; /* Ensure the icon is treated as a block for transformation */
   transform: scaleY(-1); /* Flip horizontally */
-
 }
 
 #share-button i {
   font-size: 28px; /* Icon size */
-  transform: rotate(180deg); /* Reverse the icon direction */
+  transform: rotate(180deg); /* Proper mirroring */
   color: #0000cd; /* Icon color */
 }
 
@@ -216,5 +194,3 @@ h1 {
   transform: scale(1.1); /* Slight hover effect */
   color: #00008b; /* Darker blue for hover effect */
 }
-
-
