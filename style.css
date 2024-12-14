@@ -105,7 +105,7 @@ h1 {
   content: '';
   position: absolute;
   height: 2px; /* Border thickness */
-  background: #ffffff; /* Blue color */
+  background: #0000cd; /* Blue color */
   width: 100%; /* Make the borders span the full width */
 }
 #header-border::before {
