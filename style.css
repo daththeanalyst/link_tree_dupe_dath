@@ -126,16 +126,15 @@ h1 {
   align-items: center;
   background: #ffffff;
   text-align: center;
-  margin: 0 auto 2rem; /* Center horizontally, with consistent bottom margin */
-  padding: 2vw; /* Responsive padding */
+  margin: 0px 0px 32px; /* Adjusted margins */
+  padding: 20px; /* Adjusted padding */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
-  font-size: calc(1rem + 1vw); /* Responsive font size based on screen size */
-  line-height: 1.5; /* Maintain good readability */
-  width: 80%; /* Description box takes 80% of the screen width */
-  max-width: 672px; /* Prevents it from growing too large on wide screens */
-  height: auto; /* Allow flexible height based on content */
+  font-size: 20px; /* Adjusted font size */
+  line-height: 1.5; /* Adjust line height for better readability */
+  width: 672px; /* Fixed width */
+  height: 100px; /* Fixed height */
   border: 3px solid #0000cd; /* Blue border */
-  box-sizing: border-box; /* Include padding and border in dimensions */
+  box-sizing: border-box; /* Ensure padding and border don't affect dimensions */
 }
 
 /* Social Icons Section */
