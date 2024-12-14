@@ -84,20 +84,20 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 20px 0; /* Spacing around the section */
-  padding: 8px; /* Padding inside the header */
+  padding: 8px; /* Updated padding inside the header */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
-  font-size: 28px; /* Adjust font size */
-  font-weight: bold; /* Bold font weight for the name */
+  font-size: 30px; /* Updated font size */
+  font-weight: 600; /* Slightly thinner font weight */
   color: #0000cd; /* Blue font color */
   text-align: center;
-  letter-spacing: 1px; /* Slightly reduce spacing between letters */
+  letter-spacing: 1px; /* Slightly reduced letter spacing */
   text-transform: uppercase; /* Ensure all caps */
-  width: 672px; /* Updated header width */
-  height: 64px; /* Updated header height */
+  width: 372px; /* Updated header width */
+  height: 52px; /* Updated header height */
   position: relative; /* Enable positioning for the share button */
-  border-top: 2px solid #0000cd; /* Border styling for header */
-  border-bottom: 2px solid #0000cd;
+  border-top: 1px solid #0000cd; /* Less bold border */
+  border-bottom: 1px solid #0000cd;
 }
 #header-border::before,
 #header-border::after {
