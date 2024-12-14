@@ -51,7 +51,7 @@ h1 {
   gap: 10px; /* Space between the icon and text */
   transition: transform 0.3s, box-shadow 0.3s;
   margin: 12px 0 0; /* Space below links */
-  font-size: 16px; /* Font size for text */
+  font-size: 20px; /* Font size for text */
   padding: 12px 24px; /* Vertical and horizontal padding */
   width: 372px; /* Width of the links */
   height: 56px; /* Fixed height */
@@ -73,8 +73,8 @@ h1 {
 
 /* Custom Icon Styling */
 .custom-icon {
-  width: 24px; /* Icon size */
-  height: 24px;
+  width: 28px; /* Icon size */
+  height: 28px;
   border-radius: 5px; /* Slightly rounded edges for consistency */
   object-fit: contain; /* Ensure the image fits well */
 }
@@ -197,6 +197,9 @@ h1 {
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
   box-sizing: border-box; /* Include padding in button size */
+  display: inline-block; /* Ensure the icon is treated as a block for transformation */
+  transform: scaleX(-1); /* Flip horizontally */
+
 }
 
 #share-button i {
