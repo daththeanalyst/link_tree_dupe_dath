@@ -168,7 +168,7 @@ body {
 /* Share Button */
 #share-button {
   position: absolute;
-  top: -24px; /* Above the header */
+  top: -4px; /* Above the header */
   right: 8px;
   background: none; /* Remove background */
   color: #0000cd; /* Match your design's blue */
