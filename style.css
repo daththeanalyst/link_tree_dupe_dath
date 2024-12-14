@@ -223,19 +223,21 @@ h1 {
 /* For large displays (e.g., 1920px width and above) */
 @media (min-width: 1920px) {
   body {
-    transform: scale(1.5); /* Scale up the entire body by 150% */
-    transform-origin: top center; /* Keep the scaling centered */
-    height: 80vh; /* Adjust height to fit scaled content */
-    overflow: auto; /* Allow scrolling if needed */
+    transform: scale(1.5); /* Scale up for large screens */
+    transform-origin: top center; /* Ensure scaling is centered */
+    padding-top: 0; /* Remove extra padding at the top */
+    padding-bottom: 0; /* Remove extra padding at the bottom */
+    height: 100vh; /* Prevent excessive space above and below */
   }
 }
 
-/* For extra-large displays (e.g., 2560px width and above) */
 @media (min-width: 2560px) {
   body {
-    transform: scale(1.75); /* Scale up the entire body by 175% */
-    transform-origin: top center; /* Keep the scaling centered */
-    height: 70vh; /* Adjust height to fit scaled content */
+    transform: scale(1.75); /* Scale up more for ultra-wide screens */
+    transform-origin: top center;
+    padding-top: 0; /* Remove extra padding at the top */
+    padding-bottom: 0; /* Remove extra padding at the bottom */
+    height: 100vh; /* Ensure content fits the viewport */
   }
 }
 
