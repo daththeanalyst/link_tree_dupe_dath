@@ -32,3 +32,20 @@ links.forEach((link) => {
 
   linksContainer.appendChild(linkElement);
 });
+document.getElementById("share-button").addEventListener("click", async () => {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: "Check out this profile!",
+                text: "Take a look at Dimitrios Athinaios' portfolio and social links!",
+                url: window.location.href, // The current page URL
+            });
+            console.log("Share successful!");
+        } catch (error) {
+            console.error("Error sharing:", error);
+        }
+    } else {
+        alert("Sharing is not supported on this browser.");
+    }
+});
+
