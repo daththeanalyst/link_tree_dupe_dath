@@ -39,12 +39,6 @@ h1 {
   margin-bottom: 30px;
 }
 /* Links Section */
-#links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px; /* Space between links */
-}
 #links a {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
@@ -53,15 +47,17 @@ h1 {
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between the icon and text */
   justify-content: center;
+  gap: 10px; /* Space between the icon and text */
   transition: transform 0.3s, box-shadow 0.3s;
-  margin-bottom: 4px; /* Add space below each link */
-  font-size: calc(18px * 0.67); /* Scale down font size */
-  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
-  width: calc(320px * 0.67); /* Scale down link width */
-  border-radius: calc(15px * 0.67); /* Scale down corner radius */
+  margin: 12px 0 0; /* Space below links */
+  font-size: 16px; /* Font size for text */
+  padding: 12px 24px; /* Vertical and horizontal padding */
+  width: 372px; /* Width of the links */
+  height: 56px; /* Fixed height */
+  border-radius: 15px; /* Curved corners for the links */
 }
+
 #links a i,
 #links a img {
   font-size: 24px; /* Icon size */
@@ -69,10 +65,12 @@ h1 {
   width: 24px;
   height: 24px;
 }
+
 #links a:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }
+
 /* Custom Icon Styling */
 .custom-icon {
   width: 24px; /* Icon size */
