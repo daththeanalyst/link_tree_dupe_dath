@@ -166,28 +166,42 @@ h1 {
 #social-icons i {
   margin: 0; /* Remove any unwanted margin inside icons */
 } 
+/* Updated Share Button Styling */
 #share-button {
-    position: absolute;
-    top: 4px; /* Adjust to fit your header spacing */
-    right: 10px; /* Align to the right edge */
-    background: #ffffff; /* White background for visibility */
-    color: #0000cd; /* Match your design's blue */
-    border: 2px solid #0000cd;
-    border-radius: 50%; /* Circular button */
-    width: 40px; /* Button size */
-    height: 40px; /* Button size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px; /* Icon size */
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+  position: absolute;
+  top: 10px; /* Position above the header */
+  right: 10px; /* Align to the right edge */
+  background: #ffffff; /* White background */
+  color: #0000cd; /* Blue icon color */
+  border: 2px solid #0000cd; /* Blue border */
+  border-radius: 50%; /* Circular button */
+  width: 50px; /* Adjust size */
+  height: 50px; /* Adjust size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px; /* Adjust icon size */
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 10; /* Ensure it's always above other elements */
 }
 
 #share-button:hover {
-    transform: scale(1.1); /* Slight hover effect */
-    background-color: #e6e6ff; /* Subtle hover background */
+  transform: scale(1.1); /* Slight hover effect */
+  background-color: #e6e6ff; /* Subtle hover background */
 }
+
+/* Ensure no overlap with the header on different screen sizes */
+@media (max-width: 768px) {
+  #share-button {
+    top: 5px; /* Adjust for smaller screens */
+    right: 5px; /* Keep aligned */
+    width: 40px; /* Smaller button size */
+    height: 40px; /* Smaller button size */
+    font-size: 18px; /* Adjust icon size */
+  }
+}
+
 
 
 /* For ultra-wide screens */
