@@ -1,3 +1,4 @@
+/* General Page Layout */
 body {
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   background: #ffffff; /* White background */
@@ -5,12 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 05px; /* Add space to the bottom */
-  overflow: hidden;
+  justify-content: flex-start; /* Start content from the top */
+  width: 736px; /* Set page width */
+  height: 911px; /* Set page height */
+  margin: 0 auto; /* Center the page horizontally */
+  padding: 32px; /* Padding around the page */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
 }
 /* Profile Section */
 #profile {
@@ -83,7 +84,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 20px 0; /* Spacing around the section */
-  padding: 10px 0; /* Spacing inside the section */
+  padding: 8px; /* Padding inside the header */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   font-size: 28px; /* Adjust font size */
@@ -92,11 +93,11 @@ h1 {
   text-align: center;
   letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
-  width: 80%; /* Adjust width as needed */
-  position: relative; /* Enable pseudo-elements for the split border effect */
-  margin-top: 0px; /* Ensure the header starts closer to the top */
-
-
+  width: 672px; /* Updated header width */
+  height: 64px; /* Updated header height */
+  position: relative; /* Enable positioning for the share button */
+  border-top: 2px solid #0000cd; /* Border styling for header */
+  border-bottom: 2px solid #0000cd;
 }
 #header-border::before,
 #header-border::after {
@@ -144,48 +145,52 @@ h1 {
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Align the icons vertically */
   gap: 20px; /* Space between the icons */
-  margin-top: 0px; /* Space above the icons */
-  margin-bottom: 20px; /* Space below the icons */
+  margin-top: 20px; /* Space above the social icons */
+  margin-bottom: 20px; /* Space below the social icons */
 }
+
 #social-icons a {
   display: flex; /* Ensure the icons align properly */
   justify-content: center;
   align-items: center;
   text-decoration: none; /* Remove underline */
   color: #0000cd; /* Blue icon color */
-  font-size: calc(32px * 0.67); /* Scale down icon size */
-  width: calc(50px * 0.67); /* Scale down icon container size */
-  height: calc(50px * 0.67); /* Scale down icon container size */
-  border: 2px solid #0000cd; /* Add border around icons */
+  font-size: 24px; /* Icon size */
+  width: 48px; /* Larger blue circle width */
+  height: 48px; /* Larger blue circle height */
+  border: 2px solid #0000cd; /* Blue border around the circle */
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
 }
+
 #social-icons a:hover {
   transform: scale(1.2); /* Enlarge icons slightly on hover */
-  background-color: #e6e6ff; /* Optional hover background color */
+  background-color: #e6e6ff; /* Subtle hover background */
 }
-/* Ensure consistent spacing and alignment for icons */
-#social-icons i {
-  margin: 0; /* Remove any unwanted margin inside icons */
-} 
+
 /* Updated Share Button Styling */
 #share-button {
   position: absolute;
-  top: 10px; /* Position above the header */
-  right: 10px; /* Align to the right edge */
-  background: #ffffff; /* White background */
-  color: #0000cd; /* Blue icon color */
+  top: 8px; /* Adjust to fit within header padding */
+  right: 8px; /* Adjust to align with header edge */
+  background: #ffffff; /* White background for visibility */
+  color: #0000cd; /* Match your design's blue */
   border: 2px solid #0000cd; /* Blue border */
-  border-radius: 50%; /* Circular button */
-  width: 50px; /* Adjust size */
-  height: 50px; /* Adjust size */
+  border-radius: 8px; /* Slightly rounded edges */
+  width: 44px; /* Updated button width */
+  height: 49px; /* Updated button height */
+  padding: 8px; /* Padding around the inner content */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px; /* Adjust icon size */
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
-  z-index: 10; /* Ensure it's always above other elements */
+  box-sizing: border-box; /* Include padding in button size */
+}
+
+#share-button i {
+  font-size: 28px; /* Icon size */
+  color: #0000cd; /* Icon color matches blue theme */
 }
 
 #share-button:hover {
@@ -203,8 +208,6 @@ h1 {
     font-size: 18px; /* Adjust icon size */
   }
 }
-
-
 
 /* For ultra-wide screens */
 @media (min-width: 2560px) {
