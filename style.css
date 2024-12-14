@@ -126,13 +126,16 @@ h1 {
   align-items: center;
   background: #ffffff;
   text-align: center;
-  margin: 0 auto; /* Center the box */
-  margin-bottom: -20px; /* Reduce or remove space below description */
-  font-size: calc(16px * 0.67); /* Scale down font size */
-  line-height: calc(1.6 * 0.67); /* Scale down line height */
-  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
-  width: calc(80% * 0.67); /* Scale down width */
+  margin: 0 auto 2rem; /* Center horizontally, with consistent bottom margin */
+  padding: 2vw; /* Responsive padding */
+  font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
+  font-size: calc(1rem + 1vw); /* Responsive font size based on screen size */
+  line-height: 1.5; /* Maintain good readability */
+  width: 80%; /* Description box takes 80% of the screen width */
+  max-width: 672px; /* Prevents it from growing too large on wide screens */
+  height: auto; /* Allow flexible height based on content */
   border: 3px solid #0000cd; /* Blue border */
+  box-sizing: border-box; /* Include padding and border in dimensions */
 }
 
 /* Social Icons Section */
@@ -189,6 +192,23 @@ h1 {
 #share-button:hover {
   transform: scale(1.1); /* Slight hover effect */
   background-color: #e6e6ff; /* Subtle hover background */
+}
+
+/* For very large screens */
+@media (min-width: 2560px) {
+  #description-border {
+    font-size: 2rem; /* Larger font size for ultra-wide screens */
+    padding: 3vw; /* Increase padding proportionally */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  #description-border {
+    font-size: calc(1rem + 0.5vw); /* Slightly smaller font size for mobile */
+    padding: 1.5vw; /* Reduce padding */
+    margin: 1rem auto; /* Slightly smaller margin for mobile devices */
+  }
 }
 
 /* Ensure no overlap with the header on different screen sizes */
