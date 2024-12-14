@@ -1,4 +1,3 @@
-/* General Layout */
 body {
   font-family: Arial, sans-serif;
   background: #ffffff; /* White background */
@@ -10,46 +9,39 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  margin-top: -05px;
   padding-bottom: 20px; /* Add space to the bottom */
   overflow: hidden;
-  transform: scale(var(--scale)); /* Use variable scaling */
-  transform-origin: top center;
 }
-
 /* Profile Section */
 #profile {
   text-align: center;
   margin-bottom: 40px;
 }
-
 .profile-pic {
-  width: calc(160px * var(--scale)); /* Scaled width */
-  height: calc(160px * var(--scale)); /* Scaled height */
+  width: calc(160px * 0.67); /* Scale down the width */
+  height: calc(160px * 0.67); /* Scale down the height */
   border-radius: 50%;
   border: 2px solid #0000cd; /* Blue border */
   object-fit: cover; /* Focus on the center of the image */
   object-position: center;
   margin-bottom: 20px;
 }
-
 h1 {
-  font-size: calc(28px * var(--scale)); /* Scaled font size */
+  font-size: 28px;
   margin: 10px 0;
 }
-
 .description {
-  font-size: calc(16px * var(--scale)); /* Scaled font size */
+  font-size: 16px;
   margin-bottom: 30px;
 }
-
 /* Links Section */
 #links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(8px * var(--scale)); /* Scaled gap */
+  gap: 8px; /* Space between links */
 }
-
 #links a {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
@@ -58,128 +50,147 @@ h1 {
   text-align: center;
   display: flex;
   align-items: center;
-  gap: calc(10px * var(--scale)); /* Scaled gap */
+  gap: 10px; /* Space between the icon and text */
   justify-content: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  margin-bottom: calc(4px * var(--scale)); /* Scaled margin */
-  font-size: calc(18px * var(--scale)); /* Scaled font size */
-  padding: calc(15px * var(--scale)) calc(20px * var(--scale)); /* Scaled padding */
-  width: calc(320px * var(--scale)); /* Scaled width */
-  border-radius: calc(15px * var(--scale)); /* Scaled corner radius */
+  margin-bottom: 4px; /* Add space below each link */
+  font-size: calc(18px * 0.67); /* Scale down font size */
+  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
+  width: calc(320px * 0.67); /* Scale down link width */
+  border-radius: calc(15px * 0.67); /* Scale down corner radius */
 }
-
 #links a i,
 #links a img {
-  font-size: calc(24px * var(--scale)); /* Scaled icon size */
+  font-size: 24px; /* Icon size */
   color: #0000cd; /* Ensure icons match updated text color */
-  width: calc(24px * var(--scale));
-  height: calc(24px * var(--scale));
+  width: 24px;
+  height: 24px;
 }
-
 #links a:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
+/* Custom Icon Styling */
+.custom-icon {
+  width: 24px; /* Icon size */
+  height: 24px;
+  border-radius: 5px; /* Slightly rounded edges for consistency */
+  object-fit: contain; /* Ensure the image fits well */
+}
+/* Header with Full-Width Split Borders */
 /* Header with Full-Width Split Borders */
 #header-border {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: calc(20px * var(--scale)) 0; /* Scaled margin */
-  padding: calc(10px * var(--scale)) 0; /* Scaled padding */
+  margin: 20px 0; /* Spacing around the section */
+  padding: 10px 0; /* Spacing inside the section */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
-  font-size: calc(28px * var(--scale)); /* Scaled font size */
+  font-size: 28px; /* Adjust font size */
   font-weight: bold; /* Bold font weight for the name */
   color: #0000cd; /* Blue font color */
   text-align: center;
-  letter-spacing: calc(1px * var(--scale)); /* Scaled letter spacing */
+  letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
   width: 80%; /* Adjust width as needed */
   position: relative; /* Enable pseudo-elements for the split border effect */
-}
+  margin-top: 0px; /* Ensure the header starts closer to the top */
 
+
+}
 #header-border::before,
 #header-border::after {
   content: '';
   position: absolute;
-  height: calc(2px * var(--scale)); /* Scaled border thickness */
+  height: 2px; /* Border thickness */
   background: #0000cd; /* Blue color */
   width: 100%; /* Make the borders span the full width */
 }
-
 #header-border::before {
   top: 0; /* Position at the top */
   left: 0; /* Ensure it starts from the very left */
 }
-
 #header-border::after {
   bottom: 0; /* Position at the bottom */
   left: 0; /* Ensure it starts from the very left */
 }
-
 #header-border span {
   z-index: 2; /* Ensure the text is above the border */
   background: #ffffff; /* Match background color to create the gap */
-  padding: calc(0 20px * var(--scale)); /* Scaled padding */
+  padding: 0 20px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
+#description-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  text-align: center;
+  margin: 0 auto; /* Center the box */
+  margin-bottom: -20px; /* Reduce or remove space below description */
+  font-size: calc(16px * 0.67); /* Scale down font size */
+  line-height: calc(1.6 * 0.67); /* Scale down line height */
+  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
+  width: calc(80% * 0.67); /* Scale down width */
+  border: 3px solid #0000cd; /* Blue border */
 
+}
+/* Social Icons Section */
 /* Social Icons Section */
 #social-icons {
   display: flex;
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Align the icons vertically */
-  gap: calc(20px * var(--scale)); /* Scaled gap */
-  margin-top: calc(0px * var(--scale)); /* Scaled margin */
-  margin-bottom: calc(20px * var(--scale)); /* Scaled margin */
+  gap: 20px; /* Space between the icons */
+  margin-top: 0px; /* Space above the icons */
+  margin-bottom: 20px; /* Space below the icons */
 }
-
 #social-icons a {
   display: flex; /* Ensure the icons align properly */
   justify-content: center;
   align-items: center;
   text-decoration: none; /* Remove underline */
   color: #0000cd; /* Blue icon color */
-  font-size: calc(32px * var(--scale)); /* Scaled icon size */
-  width: calc(50px * var(--scale)); /* Scaled icon container size */
-  height: calc(50px * var(--scale)); /* Scaled icon container size */
+  font-size: calc(32px * 0.67); /* Scale down icon size */
+  width: calc(50px * 0.67); /* Scale down icon container size */
+  height: calc(50px * 0.67); /* Scale down icon container size */
   border: 2px solid #0000cd; /* Add border around icons */
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
 }
-
 #social-icons a:hover {
   transform: scale(1.2); /* Enlarge icons slightly on hover */
   background-color: #e6e6ff; /* Optional hover background color */
 }
-
-/* Share Button */
+/* Ensure consistent spacing and alignment for icons */
+#social-icons i {
+  margin: 0; /* Remove any unwanted margin inside icons */
+} 
 #share-button {
-  position: absolute;
-  top: calc(10px * var(--scale)); /* Adjust to fit your header spacing */
-  right: calc(10px * var(--scale)); /* Align to the right edge */
-  background: #ffffff; /* White background for visibility */
-  color: #0000cd; /* Match your design's blue */
-  border: 2px solid #0000cd;
-  border-radius: 50%; /* Circular button */
-  width: calc(40px * var(--scale)); /* Scaled button size */
-  height: calc(40px * var(--scale)); /* Scaled button size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: calc(20px * var(--scale)); /* Scaled icon size */
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
+    position: absolute;
+    top: 4px; /* Adjust to fit your header spacing */
+    right: 10px; /* Align to the right edge */
+    background: #ffffff; /* White background for visibility */
+    color: #0000cd; /* Match your design's blue */
+    border: 2px solid #0000cd;
+    border-radius: 50%; /* Circular button */
+    width: 40px; /* Button size */
+    height: 40px; /* Button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Icon size */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 #share-button:hover {
-  transform: scale(1.1); /* Slight hover effect */
-  background-color: #e6e6ff; /* Subtle hover background */
+    transform: scale(1.1); /* Slight hover effect */
+    background-color: #e6e6ff; /* Subtle hover background */
 }
 
-/* Responsive Scaling */
+
 @media (max-width: 1920px) {
   :root {
     --scale: 1; /* Standard scale for large screens */
