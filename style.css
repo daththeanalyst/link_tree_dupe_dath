@@ -121,21 +121,45 @@ h1 {
   padding: 0 20px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
+
 #description-border {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  margin: 20px 0; /* Spacing around the section */
+  padding: 10px 0; /* Spacing inside the section */
+  background: #ffffff; /* White background */
+  font-family: Arial, sans-serif; /* Match your overall font */
+  font-size: calc(16px * var(--scale)); /* Adjust font size */
+  line-height: calc(1.6 * var(--scale)); /* Adjust line height */
+  color: #0000cd; /* Blue font color */
   text-align: center;
-  margin: 0 auto; /* Center the box */
-  margin-bottom: -20px; /* Reduce or remove space below description */
-  font-size: calc(16px * 0.67); /* Scale down font size */
-  line-height: calc(1.6 * 0.67); /* Scale down line height */
-  padding: calc(15px * 0.67) calc(20px * 0.67); /* Scale down padding */
-  width: calc(80% * 1); /* Scale down width */
-  border: 3px solid #0000cd; /* Blue border */
-
+  width: calc(80% * var(--scale)); /* Adjust width dynamically */
+  position: relative; /* Enable pseudo-elements for the split border effect */
 }
+#description-border::before,
+#description-border::after {
+  content: '';
+  position: absolute;
+  height: 2px; /* Border thickness */
+  background: #0000cd; /* Blue color */
+  width: 100%; /* Make the borders span the full width */
+}
+#description-border::before {
+  top: 0; /* Position at the top */
+  left: 0; /* Ensure it starts from the very left */
+}
+#description-border::after {
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Ensure it starts from the very left */
+}
+#description-border span {
+  z-index: 2; /* Ensure the text is above the border */
+  background: #ffffff; /* Match background color to create the gap */
+  padding: 0 20px; /* Space around the text to create the gap */
+  position: relative; /* Ensure proper stacking above pseudo-elements */
+}
+
 /* Social Icons Section */
 /* Social Icons Section */
 #social-icons {
