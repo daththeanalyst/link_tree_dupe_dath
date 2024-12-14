@@ -129,10 +129,10 @@ h1 {
   text-align: center;
   margin: 0 auto; /* Center the box */
   margin-bottom: -20px; /* Reduce or remove space below description */
-  font-size: calc(16px); /* Scale down font size */
-  line-height: calc(1.6); /* Scale down line height */
-  padding: calc(15px) calc(20px); /* Scale down padding */
-  width: calc(80%); /* Scale down width */
+  font-size: calc(13px); /* Scale down font size */
+  line-height: calc(1.1); /* Scale down line height */
+  padding: calc(12px) calc(15px); /* Scale down padding */
+  width: calc(65%); /* Scale down width */
   border: 3px solid #0000cd; /* Blue border */
 
 }
