@@ -121,7 +121,21 @@ h1 {
   padding: 0 20px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
+#description-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  text-align: center;
+  margin: 0 auto; /* Center the box */
+  margin-bottom: -20px; /* Reduce or remove space below description */
+  font-size: calc(16px); /* Scale down font size */
+  line-height: calc(1.6); /* Scale down line height */
+  padding: calc(15px) calc(20px); /* Scale down padding */
+  width: calc(80%); /* Scale down width */
+  border: 3px solid #0000cd; /* Blue border */
 
+}
 
 }
 /* Social Icons Section */
