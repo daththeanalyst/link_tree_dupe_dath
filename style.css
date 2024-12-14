@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
   background: #ffffff; /* White background */
   color: #0000cd; /* Updated blue text color */
   display: flex;
