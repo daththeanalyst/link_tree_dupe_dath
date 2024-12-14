@@ -87,21 +87,19 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 20px 0; /* Spacing around the section */
-  padding: 8px; /* Updated padding inside the header */
+  padding: 8px 0; /* Padding inside the header */
   background: #ffffff; /* White background */
   font-family: "ImperialText", "Helvetica Neue", Arial, sans-serif; /* Font family */
-  font-size: 30px; /* Updated font size */
-  font-weight: 600; /* Slightly thinner font weight */
+  font-size: 30px; /* Font size for the header text */
+  font-weight: bold; /* Bold font weight for the name */
   color: #0000cd; /* Blue font color */
   text-align: center;
-  letter-spacing: 1px; /* Slightly reduced letter spacing */
+  letter-spacing: 1px; /* Slightly reduce spacing between letters */
   text-transform: uppercase; /* Ensure all caps */
-  width: 372px; /* Updated header width */
-  height: 52px; /* Updated header height */
-  position: relative; /* Enable positioning for the share button */
-  border-top: 1px solid #0000cd; /* Less bold border */
-  border-bottom: 1px solid #0000cd;
+  width: 372px; /* Adjust width as needed */
+  position: relative; /* Enable pseudo-elements for the split border effect */
 }
+
 #header-border::before,
 #header-border::after {
   content: '';
@@ -110,20 +108,24 @@ h1 {
   background: #0000cd; /* Blue color */
   width: 100%; /* Make the borders span the full width */
 }
+
 #header-border::before {
   top: 0; /* Position at the top */
   left: 0; /* Ensure it starts from the very left */
 }
+
 #header-border::after {
   bottom: 0; /* Position at the bottom */
   left: 0; /* Ensure it starts from the very left */
 }
+
 #header-border span {
   z-index: 2; /* Ensure the text is above the border */
   background: #ffffff; /* Match background color to create the gap */
   padding: 0 20px; /* Space around the text to create the gap */
   position: relative; /* Ensure proper stacking above pseudo-elements */
 }
+
 #description-border {
   display: flex;
   justify-content: center;
