@@ -144,7 +144,7 @@ h1 {
   line-height: 1.5; /* Adjust line height for better readability */
   width: 672px; /* Fixed width */
   height: 100px; /* Fixed height */
-  border: 3px solid #0000cd; /* Blue border */
+  border: 2px solid #0000cd; /* Blue border */
   box-sizing: border-box; /* Ensure padding and border don't affect dimensions */
   border-radius: 15px; /* Added border radius to match the link buttons */
 
@@ -160,6 +160,8 @@ h1 {
   align-items: center; /* Align the icons vertically */
   gap: 20px; /* Space between the icons */
   margin: 0px 0px 20px; /* Space below icons */
+  box-sizing: border-box; /* Ensure consistent sizing */
+
 
 }
 
@@ -175,6 +177,8 @@ h1 {
   border: 2px solid #0000cd; /* Blue border around the circle */
   border-radius: 50%; /* Make the icon container circular */
   transition: transform 0.3s, background-color 0.3s;
+  box-sizing: border-box; /* Ensure consistent border and padding dimensions */
+
 }
 
 #social-icons a:hover {
