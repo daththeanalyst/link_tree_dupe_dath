@@ -206,33 +206,42 @@ body {
     width: 90%;
     height: auto;
     padding: 16px;
+    margin: 0 auto; /* Center the body */
   }
 
   .profile-pic {
     width: 120px;
     height: 120px;
+    margin: 10px auto; /* Center profile pic */
   }
 
   #header-border {
     width: 90%;
     font-size: 35px;
     height: auto;
+    margin: 0 auto; /* Center the header */
   }
 
   #description-border {
     width: 90%;
     font-size: 18px;
     height: auto;
+    padding: 16px; /* Add padding for better appearance */
+    margin: 16px auto; /* Center description */
   }
 
   #links a {
-    width: 90%;
+    width: 90%; /* Full width for links */
     font-size: 18px;
+    height: 112px; /* Double the original size */
+    padding: 24px 32px; /* Adjust padding */
+    margin: 16px auto; /* Center links */
   }
 
   #social-icons {
     width: 90%;
-    gap: 10px;
+    gap: 10px; /* Reduce spacing between icons */
+    margin: 16px auto; /* Center icons */
   }
 }
 
@@ -240,31 +249,42 @@ body {
   body {
     width: 100%;
     padding: 8px;
+    margin: 0 auto; /* Center the body */
   }
 
   .profile-pic {
     width: 100px;
     height: 100px;
+    margin: 10px auto; /* Center profile pic */
   }
 
   #header-border {
     font-size: 28px;
     padding: 4px;
+    width: 100%;
+    margin: 0 auto; /* Center the header */
   }
 
   #description-border {
     font-size: 16px;
     padding: 10px;
+    width: 100%;
+    margin: 16px auto; /* Center description */
   }
 
   #links a {
     font-size: 16px;
-    padding: 8px 16px;
+    width: 100%; /* Full width for links */
+    height: 112px; /* Double the original size */
+    padding: 24px 32px; /* Adjust padding */
+    margin: 16px auto; /* Center links */
   }
 
   #social-icons a {
     font-size: 20px;
     width: 40px;
     height: 40px;
+    margin: 0 auto; /* Center icons */
   }
 }
+
