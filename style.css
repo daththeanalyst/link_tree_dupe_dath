@@ -31,6 +31,12 @@ body {
 }
 
 /* Links Section */
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure links are centered */
+  width: 100%; /* Full width of the container */
+}
 #links a {
   text-decoration: none;
   background: #ffffff; /* White background for the links */
