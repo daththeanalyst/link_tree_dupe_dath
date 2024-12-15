@@ -194,3 +194,71 @@ body {
   transform: scale(1.1); /* Slight hover effect */
   color: #00008b; /* Darker blue for hover effect */
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  #header-border {
+    width: 90%;
+    font-size: 35px;
+    height: auto;
+  }
+
+  #description-border {
+    width: 90%;
+    font-size: 18px;
+    height: auto;
+  }
+
+  #links a {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  #social-icons {
+    width: 90%;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  #header-border {
+    font-size: 28px;
+    padding: 4px;
+  }
+
+  #description-border {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #links a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  #social-icons a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
