@@ -230,12 +230,12 @@ body {
     margin: 16px auto; /* Center description */
   }
 
-  #links a {
-    width: 90%; /* Full width for links */
-    font-size: 18px;
-    height: 112px; /* Double the original size */
-    padding: 24px 32px; /* Adjust padding */
-    margin: 16px auto; /* Center links */
+ #links a {
+    width: 80%; /* Slightly smaller width for better fit */
+    font-size: 16px; /* Reduced font size */
+    height: 72px; /* Reduced height */
+    padding: 12px 20px; /* Adjusted padding */
+    margin: 12px auto; /* Center links with reduced margin */
   }
 
   #social-icons {
@@ -273,11 +273,11 @@ body {
   }
 
   #links a {
-    font-size: 16px;
-    width: 100%; /* Full width for links */
-    height: 112px; /* Double the original size */
-    padding: 24px 32px; /* Adjust padding */
-    margin: 16px auto; /* Center links */
+    width: 100%; /* Full width for smaller screens */
+    font-size: 14px; /* Smaller font size */
+    height: 64px; /* Reduced height for compact layout */
+    padding: 10px 16px; /* Adjust padding */
+    margin: 8px auto; /* Reduce margin for better spacing */
   }
 
   #social-icons a {
