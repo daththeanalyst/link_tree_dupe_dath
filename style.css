@@ -231,7 +231,7 @@ body {
   }
 
  #links a {
-    width: 75%; /* Further reduce width for better fit */
+    width: 70%; /* Further reduce width for better fit */
     font-size: 15px; /* Slightly smaller font size */
     height: 68px; /* Slightly reduced height */
     padding: 10px 18px; /* Adjust padding for compact spacing */
@@ -273,7 +273,7 @@ body {
   }
 
   #links a {
-    width: 92%; /* Slightly reduced width */
+    width: 85%; /* Slightly reduced width */
     font-size: 14px; /* Keep font size for readability */
     height: 60px; /* Reduced height for compact look */
     padding: 8px 14px; /* Compact padding */
