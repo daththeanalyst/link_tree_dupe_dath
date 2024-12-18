@@ -203,7 +203,7 @@ body {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   body {
-    width: 90%;
+    width: 86%;
     height: auto;
     padding: 16px;
     margin: 0 auto; /* Center the body */
@@ -223,7 +223,7 @@ body {
   }
 
   #description-border {
-    width: 90%;
+    width: 92%;
     font-size: 18px;
     height: auto;
     padding: 16px; /* Add padding for better appearance */
