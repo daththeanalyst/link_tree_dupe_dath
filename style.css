@@ -223,7 +223,7 @@ body {
   }
 
   #description-border {
-    width: 92%;
+    width: 91%;
     font-size: 18px;
     height: auto;
     padding: 16px; /* Add padding for better appearance */
@@ -273,7 +273,7 @@ body {
   }
 
   #links a {
-    width: 95%; /* Slightly reduced width */
+    width: 92%; /* Slightly reduced width */
     font-size: 14px; /* Keep font size for readability */
     height: 60px; /* Reduced height for compact look */
     padding: 8px 14px; /* Compact padding */
